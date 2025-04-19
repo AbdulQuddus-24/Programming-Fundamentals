@@ -1,0 +1,38 @@
+#include <iostream>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+using namespace std;
+void studentsMarks(int arrayStudents){
+
+	cout<<arrayStudents[1][2];
+	
+}
+
+int main(int argc, char** argv) {
+int students,Marks;
+
+cout<<"Enter no of Students: ";
+cin>>students;
+	
+cout<<"Enter no of Subject: ";
+cin>>Marks;
+
+
+int arrayStudents[students][Marks];
+
+for(int i=0;i<students;i++){
+	
+	
+for(int j=0;j<Marks;j++){
+	cout<<"Enter Marks of Subject "<<j+1<<" of Student "<<i+1<<" = ";
+	
+	cin>>arrayStudents[i][j];
+	
+	
+}	
+	
+}
+
+studentsMarks(int arrayStudents);
+	return 0;
+}
